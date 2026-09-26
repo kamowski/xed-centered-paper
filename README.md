@@ -139,7 +139,7 @@ Okolo textovej plochy vytvorí široké sivé okraje a uprostred ponechá bielu 
 
 Doplnok je určený najmä na pohodlné písanie bez zbytočného rozptyľovania.
 
-## Funkcie
+## Funkcie
 
 biely papier vycentrovaný v editore, približne 80 znakov široký
 
@@ -160,6 +160,7 @@ nezasahuje do ukladania ani exportu
 nemá vplyv na Pandoc ani iné nástroje pracujúce s dokumentom
 
 ## Klávesová skratka
+
 Kláves	Funkcia
 F10	    Zapnúť/vypnúť centered paper
 
@@ -253,7 +254,7 @@ Ak prestane fungovať v novšej verzii Xedu, pokojne ho forknite a opravte.
 
 Stav údržby: funguje u mňa. 🙂
 
-##Licencia
+## Licencia
 
 Copyright © 2026
 
