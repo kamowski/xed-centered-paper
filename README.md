@@ -30,6 +30,7 @@ Does not affect saving or exporting
 Works independently of document format or tools such as Pandoc
 
 ## Keyboard shortcuts
+
 Key	Action
 F10	Toggle centered paper
 
@@ -161,7 +162,7 @@ nemá vplyv na Pandoc ani iné nástroje pracujúce s dokumentom
 
 ## Klávesová skratka
 
-Kláves	Funkcia
+Klávesa	Funkcia
 F10	    Zapnúť/vypnúť centered paper
 
 Ostatné klávesové skratky poskytuje samotný Xed.
@@ -184,14 +185,16 @@ mkdir -p ~/.local/share/xed/plugins/centered-paper
 2. Doň skopíruj tieto dva súbory:
 
 centered-paper/
-├── centered-paper.plugin
-└── centered_paper.py
+- centered-paper.plugin
+- centered_paper.py
 
 
 Súbor centered-paper.plugin má obsahovať:
 
 [Plugin]
+
 Loader=python3
+
 Module=centered_paper
 
 
@@ -292,6 +295,7 @@ nincs hatással a mentésre vagy az exportálásra
 nincs hatással a Pandocra vagy más, a dokumentummal dolgozó eszközökre
 
 ## Gyorsbillentyű
+
 Billentyű	Funkció
 F10	        A centered paper be-/kikapcsolása
 
@@ -317,8 +321,8 @@ mkdir -p ~/.local/share/xed/plugins/centered-paper
 2. Másold bele ezt a két fájlt:
 
 centered-paper/
-├── centered-paper.plugin
-└── centered_paper.py
+- centered-paper.plugin
+- centered_paper.py
 
 
 A centered-paper.plugin fájl tartalma:
