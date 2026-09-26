@@ -1,6 +1,6 @@
-# Readme En, Sk, Hu
+# Readme en, sk, hu
 
-## Centered Paper for Xed
+## (en) Centered Paper for Xed
 
 A tiny plugin for Xed
  that turns the editor into a simple, centered "sheet of paper".
@@ -131,7 +131,7 @@ This project is released under the MIT License.
 
 ***
 
-# Centered Paper pre Xed
+# (sk) Centered Paper pre Xed
 
 Malý doplnok pre Xed, ktorý zmení editor na jednoduchý, vycentrovaný „hárok papiera“.
 
@@ -262,7 +262,7 @@ Tento projekt je vydaný pod licenciou MIT.
 
 ***
 
-# Centered Paper Xedhez
+# (hu) Centered Paper Xedhez
 
 Egy apró bővítmény az Xed
  szövegszerkesztőhöz, amely az editort egyszerű, középre igazított „papírlappá” alakítja.
