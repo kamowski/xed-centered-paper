@@ -57,14 +57,6 @@ centered-paper/
 - centered-paper.plugin
 - centered_paper.py
 
-
-The plugin file should contain:
-
-[Plugin]
-Loader=python3
-Module=centered_paper
-
-
 3. Then enable Centered Paper in:
 
 Xed → Preferences → Plugins
@@ -189,15 +181,6 @@ centered-paper/
 - centered_paper.py
 
 
-Súbor centered-paper.plugin má obsahovať:
-
-[Plugin]
-
-Loader=python3
-
-Module=centered_paper
-
-
 3. Potom doplnok zapni v:
 
 Xed → Nastavenia → Moduly
@@ -255,7 +238,7 @@ Budúce verzie Xedu môžu zmeniť API doplnkov alebo spôsob integrácie GTK, t
 
 Ak prestane fungovať v novšej verzii Xedu, pokojne ho forknite a opravte.
 
-Stav údržby: funguje u mňa. 🙂
+Stav údržby: u mňa funguje 🙂
 
 ## Licencia
 
@@ -323,13 +306,6 @@ mkdir -p ~/.local/share/xed/plugins/centered-paper
 centered-paper/
 - centered-paper.plugin
 - centered_paper.py
-
-
-A centered-paper.plugin fájl tartalma:
-
-[Plugin]
-Loader=python3
-Module=centered_paper
 
 
 3. Ezután engedélyezd a bővítményt itt:
