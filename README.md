@@ -53,8 +53,8 @@ mkdir -p ~/.local/share/xed/plugins/centered-paper
 2. Copy these two files into it:
 
 centered-paper/
-├── centered-paper.plugin
-└── centered_paper.py
+- centered-paper.plugin
+- centered_paper.py
 
 
 The plugin file should contain:
