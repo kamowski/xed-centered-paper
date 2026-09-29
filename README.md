@@ -2,6 +2,8 @@
 
 ## (en) Centered Paper for Xed
 
+![centered paper](images/screenshot.png)
+
 A tiny plugin for Xed
  that turns the editor into a simple, centered "sheet of paper".
 
