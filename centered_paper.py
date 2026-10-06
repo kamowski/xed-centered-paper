@@ -62,6 +62,7 @@ class CenteredPaperPlugin(GObject.Object, Xed.WindowActivatable):
         self._size_handler = None
         self._font_handler = None
         self._draw_handler = None
+        self._tab_handler = None
 
     # ---------------------------------------------------------
     # Aktivácia pluginu
@@ -70,12 +71,22 @@ class CenteredPaperPlugin(GObject.Object, Xed.WindowActivatable):
     def do_activate(self):
         self._install_action()
 
-        self.window.connect(
+        self._tab_handler = self.window.connect(
             "active-tab-changed",
             self._on_active_tab_changed
         )
 
     def do_deactivate(self):
+
+        if self._tab_handler is not None:
+            try:
+                self.window.disconnect(
+                    self._tab_handler
+                )
+            except Exception:
+                pass
+
+            self._tab_handler = None
 
         self._detach()
 
@@ -204,7 +215,6 @@ class CenteredPaperPlugin(GObject.Object, Xed.WindowActivatable):
             self._on_draw
         )
 
-        self._install_css()
         self._update_layout()
 
     # ---------------------------------------------------------
@@ -484,23 +494,3 @@ class CenteredPaperPlugin(GObject.Object, Xed.WindowActivatable):
         # Text už Xed vykreslil.
         return False
 
-    # ---------------------------------------------------------
-    # CSS
-    # ---------------------------------------------------------
-
-    def _install_css(self):
-
-        css = Gtk.CssProvider()
-
-        css.load_from_data(
-            b"""
-            .centered-paper-view {
-                background-image: none;
-            }
-            """
-        )
-
-        self.view.get_style_context().add_provider(
-            css,
-            Gtk.STYLE_PROVIDER_PRIORITY_APPLICATION
-        )
