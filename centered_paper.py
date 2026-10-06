@@ -68,7 +68,6 @@ class CenteredPaperPlugin(GObject.Object, Xed.WindowActivatable):
     # ---------------------------------------------------------
 
     def do_activate(self):
-
         self._install_action()
 
         self.window.connect(
