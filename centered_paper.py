@@ -51,7 +51,7 @@ class CenteredPaperPlugin(GObject.Object, Xed.WindowActivatable):
     def __init__(self):
         super().__init__()
 
-        self.enabled = True
+        self.enabled = False
         self.accel_group = None
 
         self.view = None
@@ -70,7 +70,6 @@ class CenteredPaperPlugin(GObject.Object, Xed.WindowActivatable):
     def do_activate(self):
 
         self._install_action()
-        self._attach_to_current_view()
 
         self.window.connect(
             "active-tab-changed",
